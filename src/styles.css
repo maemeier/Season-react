@@ -2,3 +2,49 @@
   font-family: sans-serif;
   text-align: center;
 }
+.icon-left {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.icon-right {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.season-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.winter {
+  background: linear-gradient(
+    90deg,
+    rgba(127, 127, 213, 1) 0%,
+    rgba(134, 168, 231, 1) 40%,
+    rgba(145, 234, 228, 1) 100%
+  );
+}
+.summer {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 81, 47, 1) 0%,
+    rgba(240, 152, 25, 1) 55%
+  );
+}
+
+.season-display.winter i {
+  color: #e1f7fe;
+}
+.season-display.summer i {
+  color: #fde396;
+}
