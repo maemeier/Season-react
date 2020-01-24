@@ -48,3 +48,8 @@ h1 {
 .season-display.summer i {
   color: #fde396;
 }
+p {
+  color: white;
+  padding-top: 8rem;
+  font-size: 2rem;
+}
