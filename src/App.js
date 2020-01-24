@@ -16,14 +16,15 @@ class App extends React.Component {
       }
     );
   }
+
   render() {
-    return (
-      <div>
-        <SeasonDisplay />
-        <h1>Latitude: {this.state.lat} </h1>{" "}
-        <h1>error: {this.state.errorMessage}</h1>
-      </div>
-    );
+    if (this.state.errorMessage && !this.state.lat) {
+      return <h1> Error: {this.state.errorMessage}</h1>;
+    }
+    if (!this.state.errorMessage && this.state.lat) {
+      return <h1>latitude: {this.state.lat}</h1>;
+    }
+    return <div>Loding!</div>;
   }
 }
 export default App;
